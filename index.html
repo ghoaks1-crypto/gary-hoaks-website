@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My First Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+      margin-top: 16px;
+    }
+    h2 {
+      color: #fe5a1d;
+      margin-top: 32px;
+    }
+    p {
+      color: #555;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    /* Add this for multi-column lists */
+    .multi-column {
+      column-count: 3; /* Change to 3 for 3 columns if needed */
+      column-gap: 20px;
+      list-style-position: inside;
+    }
+    a {
+      color: #4f46e5;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+    button {
+      margin-top: 24px;
+      padding: 10px 16px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Personal profile page -->
+  <img src="HSYN6225.JPG" alt="Profile photo" class="avatar" />
+  <h1>Hello, I'm Gary Hoaks</h1>
+  <p>This is the space where I get to tell the world a little about myself, and maybe a few other things.</p>
+
+  <h2>About Me</h2>
+  <p>
+    A collection of life's memories, a way to tell stories to your family and friends, keeping up with medical information and having tools to communicate medical information so you don't have to remember everything. I want to talk about my interests and hobbies, use the website as a tool to sell my crafts, create a blog post, and hopefully someday have conversations with strangers.
+  </p>
+
+  <h2>My Links</h2>
+  <ul>
+    <li><a href="photos.html">Photos and Videos</a></li>
+    <li><a href="blogs.html">My Blogs</a></li>
+    <li><a href="#">My Instagram</a></li>
+    <li><a href="#">My LinkedIn</a></li>
+    <li><a href="#">My Facebook</a></li>
+    <li><a href="#">My Twitter</a></li>
+  </ul>
+
+  <h2>My Hobbies and Interest</h2>
+  <ul class="multi-column">
+    <li>Music</li>
+    <li>Gaming</li>
+    <li>Technology</li>
+    <li>Crafting</li>
+    <li>Outdoors</li>
+    <li>Travel</li>
+    <li>Photography</li>
+    <li>Writing</li>
+    <li>Reading</li>
+    <li>Cooking</li>
+    <li>Learning</li>
+    <li>Instruments</li>
+  </ul>
+
+  <h2>My Favorite Websites</h2>
+  <ul>
+    <li><a href="https://www.guitarcenter.com/?source=4GOA5AJBA">Guitar Center</a></li>
+  </ul>
+
+  <button onclick="sayHi()">Say Hello</button>
+
+  <script>
+    function sayHi() {
+      alert("Thanks for visiting my page 😊");
+    }
+  </script>
+</body>
+</html>
