@@ -46,17 +46,53 @@
     a:hover {
       text-decoration: underline;
     }
+    button {
+      margin-top: 24px;
+      padding: 10px 16px;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      background-color: #fe5a1d;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button2 {
+      margin-top: 24px;
+      padding: 10px 16px;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      background-color: #050008;
+      color: #fffefe;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .top-links {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin: 20px 0;
+    }
     .back-link {
       margin-top: 40px;
       display: inline-block;
     }
+
   </style>
 </head>
 <body>
+    <div class="top-links">
+    <button2 onclick="window.location.href='index.html'">Home</button2>
+    <button onclick="window.location.href='videos.html'">Videos</button>
+    <button onclick="window.location.href='blogs.html'">My Blogs</button>
+    <button onclick="window.location.href='About.html'">About Me</button>
+    <button onclick="window.location.href='contact.html'">Contact Me</button>
+  </div>
+
   <h1>Photos</h1>
   <p>Here are some of my favorite photos.</p>
 
-  <h2>Photos</h2>
   <div class="gallery">
     <img src="Photos/IMG_0105.JPEG" alt="Photo 1" />
     <img src="Photos/IMG_0169.JPEG" alt="Photo 2" />
@@ -64,6 +100,7 @@
     <img src="Photos/IMG_0636.JPEG" alt="Photo 4" />
     <img src="Photos/IMG_0637.JPEG" alt="Photo 5" />
     <img src="Photos/IMG_0641.JPEG" alt="Photo 6" />
+    <img src="Photos/IMG_2324.JPG" alt="Photo 7" />
   </div>
 
   <a href="index.html" class="back-link">Back to Home</a>
