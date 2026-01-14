@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My First Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+      margin-top: 16px;
+    }
+    h2 {
+      color: #029c0f;
+      margin-top: 32px;
+    }
+    h3 {
+      color: #050783;
+      margin-top: 32px;
+    }
+    p {
+      color: hsl(221, 98%, 17%);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    ul {
+      color: #5306e0;
+      font-size: 18px;
+      padding-left: 20px;
+      list-style-type: none;
+    }
+    /* Add this for multi-column lists */
+    .multi-column {
+      column-count: 3; /* Change to 3 for 3 columns if needed */
+      column-gap: 20px;
+      list-style-position: inside;
+    }
+    a {
+      color: #4f46e5;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+    button {
+      margin-top: 24px;
+      padding: 10px 16px;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      background-color: #fe5a1d;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button2 {
+      margin-top: 24px;
+      padding: 10px 16px;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      background-color: lab(1.05% 0.89 1.6);
+      color: #fcfafa;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .top-links {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-links">
+    <button2 onclick="window.location.href='index.html'">Home</button2>
+    <button onclick="window.location.href='photos.html'">Photos</button>
+    <button onclick="window.location.href='videos.html'">Videos</button>
+    <button onclick="window.location.href='blogs.html'">My Blogs</button>
+    <button onclick="window.location.href='about.html'">About Me</button>
+    <button onclick="window.location.href='contact.html'">Contact Me</button>
+  </div>
+
+  <!-- Personal profile page -->
+  <img src="HSYN6225.JPG" alt="Profile photo" class="avatar" />
+  <h1>Hello, I'm Gary Hoaks</h1>
+  <p>This is the space where I get to tell the world a little about myself.
+    Check out the links above...
+  </p>
+
+  
+
+
+
+
+
+
+ <img src="Photos/IMG_0673.JPEG" alt="A picture" style="display: block; margin: 20px auto; max-width: 100%; height: auto;" />
+
+  <p>Picture of the day. Carl is such a sweetheart cat</p>
+  <script>
+    function sayHi() 
+    {
+      navigator.clipboard.writeText("https://youtube.com/shorts/34Atn_5pzSc?feature=share");
+    }
+      <button2 onclick="sayHi()">DON'T PUSH!</button2>
+  </script>
+</body>
+</html>
