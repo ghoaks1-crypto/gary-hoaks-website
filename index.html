@@ -21,11 +21,11 @@
       margin-top: 32px;
     }
     h3 {
-      color: #4a0583;
+      color: #050783;
       margin-top: 32px;
     }
     p {
-      color: #555;
+      color: hsl(221, 98%, 17%);
       font-size: 18px;
       line-height: 1.6;
     }
@@ -67,6 +67,17 @@
       border-radius: 8px;
       cursor: pointer;
     }
+    button2 {
+      margin-top: 24px;
+      padding: 10px 16px;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      background-color: lab(1.05% 0.89 1.6);
+      color: #fcfafa;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
     .top-links {
       display: flex;
       gap: 10px;
@@ -76,62 +87,38 @@
   </style>
 </head>
 <body>
-  <!-- Personal profile page -->
-  <img src="HSYN6225.JPG" alt="Profile photo" class="avatar" />
-  <h1>Hello, I'm Gary Hoaks</h1>
-  <p>This is the space where I get to tell the world a little about myself, and maybe a few other things.</p>
-
   <div class="top-links">
+    <button2 onclick="window.location.href='index.html'">Home</button2>
     <button onclick="window.location.href='photos.html'">Photos</button>
     <button onclick="window.location.href='videos.html'">Videos</button>
     <button onclick="window.location.href='blogs.html'">My Blogs</button>
-    <button onclick="window.location.href='contact.html'">Contact Me</button>
     <button onclick="window.location.href='about.html'">About Me</button>
+    <button onclick="window.location.href='contact.html'">Contact Me</button>
   </div>
 
-  <h2>About Me</h2>
-  <p>
-    Hopefully this site will tell you all you need to know about me. If not, feel free to reach out via any of my social media links below!
+  <!-- Personal profile page -->
+  <img src="HSYN6225.JPG" alt="Profile photo" class="avatar" />
+  <h1>Hello, I'm Gary Hoaks</h1>
+  <p>This is the space where I get to tell the world a little about myself.
+    Check out the links above...
   </p>
 
+  
 
 
-  <h2>My Social Media</h2>
-  <ul>
-    <li><a href="#">My LinkedIn</a></li>
-    <li><a href="#">My Facebook</a></li>
-    <li><a href="#">My Twitter</a></li>
-    <li><a href="#">My Instagram</a></li>
-    <li><a href="#">My YouTube</a></li>
-  </ul>
 
-  <h2>My Hobbies and Interest</h2>
-  <ul class="multi-column">
-    <li>Music</li>
-    <li>Gaming</li>
-    <li>Technology</li>
-    <li>Crafting</li>
-    <li>Outdoors</li>
-    <li>Travel</li>
-    <li>Photography</li>
-    <li>Writing</li>
-    <li>Reading</li>
-    <li>Cooking</li>
-    <li>Learning</li>
-    <li>Instruments</li>
-  </ul>
 
-  <h2>My Favorite Websites</h2>
-  <ul>
-    <li><a href="https://www.guitarcenter.com/?source=4GOA5AJBA">Guitar Center</a></li>
-  </ul>
 
-  <button onclick="sayHi()">Say Hello</button>
 
+ <img src="Photos/IMG_0673.JPEG" alt="A picture" style="display: block; margin: 20px auto; max-width: 100%; height: auto;" />
+
+  <p>Picture of the day. Carl is such a sweetheart cat</p>
   <script>
-    function sayHi() {
-      alert("Thanks for visiting my page 😊");
+    function sayHi() 
+    {
+      navigator.clipboard.writeText("https://youtube.com/shorts/34Atn_5pzSc?feature=share");
     }
+      <button2 onclick="sayHi()">DON'T PUSH!</button2>
   </script>
 </body>
 </html>
